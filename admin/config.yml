@@ -3,7 +3,9 @@ backend:
   repo: AzaFrontDev/ao-team-testing
   branch: main
   base_url: https://ao-team-oauth1.vercel.app
+  auth_endpoint: api/auth
 
+# Обязательные поля для медиафайлов
 media_folder: "src"
 public_folder: "/src"
 
