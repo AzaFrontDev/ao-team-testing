@@ -1,8 +1,8 @@
-local_backend: true
-
 backend:
-  name: git-gateway
+  name: github
+  repo: AzaFrontDev/ao-team-testing # Например: azat/A-O-Team-main
   branch: main
+  base_url: https://ao-team-testing.vercel.app/ # URL проекта, который ты задеплоил в Шаге 2
 
 # Обязательные поля для медиафайлов
 media_folder: "src"
