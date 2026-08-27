@@ -1,10 +1,9 @@
 backend:
   name: github
-  repo: AzaFrontDev/ao-team-testing # Например: azat/A-O-Team-main
+  repo: AzaFrontDev/ao-team-testing
   branch: main
-  base_url: ttps://ao-team-oauth1.vercel.app # URL проекта, который ты задеплоил в Шаге 2
+  base_url: https://ao-team-oauth1.vercel.app
 
-# Обязательные поля для медиафайлов
 media_folder: "src"
 public_folder: "/src"
 
