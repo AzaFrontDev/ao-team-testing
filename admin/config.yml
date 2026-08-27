@@ -1,0 +1,26 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Обязательные поля для медиафайлов
+media_folder: "src"
+public_folder: "/src"
+
+collections:
+  - name: "services_collection"
+    label: "Управление услугами"
+    files:
+      - file: "service.json"
+        label: "Список услуг"
+        name: "services_file"
+        fields:
+          - label: "Услуги"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "number" }
+              - { label: "Название услуги", name: "title", widget: "string" }
+              - { label: "Описание", name: "description", widget: "text" }
+              - { label: "Цена", name: "price", widget: "string" }

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A&amp;O Team — фронтенд-студия разработки сайтов</title>
+    <meta
+      name="description"
+      content="A&O Team — команда фронтенд-разработчиков. Лендинги, сайты-визитки, многостраничные сайты, редизайн и доработка. Чистый код, скорость и адаптивность."
+    />
+    <meta name="author" content="A&O Team" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="A&O Team — фронтенд-студия разработки" />
+    <meta
+      property="og:description"
+      content="Превращаем макеты и идеи в чистый, оптимизированный и адаптивный код."
+    />
+    <meta property="og:site_name" content="A&O Team" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="A&O Team — фронтенд-студия разработки сайтов" />
+    <meta property="og:description" content="Превращаем макеты и идеи в чистый, оптимизированный и адаптивный код." />
+    
+    <meta property="og:image" content="https://a-o-team.vercel.app/src/Logo.webp" />
+    <meta property="og:image:secure_url" content="https://a-o-team.vercel.app/src/Logo.webp" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A&O Team Preview" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A&O Team — фронтенд-студия разработки" />
+    <meta name="twitter:description" content="Лендинги, сайты-визитки, многостраничные сайты и редизайн." />
+    <meta name="twitter:image" content="https://a-o-team.vercel.app/src/Logo.webp" />
+
+    <link rel="icon" href="./src/Logo.webp" type="image/webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<noscript>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+  />
+</noscript>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="aurora" aria-hidden="true"></div>
+    <div class="grid-lines" aria-hidden="true"></div>
+
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a class="logo" href="#hero" aria-label="A&O Team — на главную">
+  <img src="/src/Logo.webp" alt="A&O Team Logo" class="logo__img" />
+</a>
+        <nav class="nav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#about">О нас</a></li>
+            <li><a class="nav__link" href="#portfolio">Портфолио</a></li>
+            <li><a class="nav__link" href="#services">Услуги</a></li>
+            <li><a class="nav__link" href="#process">Процесс</a></li>
+            <li><a class="nav__link" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a class="btn btn--primary btn--sm header__cta" href="#contacts">Обсудить проект</a>
+          <button
+            class="burger"
+            id="burger"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <span class="burger__box" aria-hidden="true">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobile-menu" hidden>
+        <nav class="container" aria-label="Мобильная навигация">
+          <ul class="mobile-menu__list">
+            <li><a class="mobile-menu__link" href="#about">О нас</a></li>
+            <li><a class="mobile-menu__link" href="#services">Услуги</a></li>
+            <li><a class="mobile-menu__link" href="#stack">Процесс</a></li>
+            <li><a class="mobile-menu__link" href="#contacts">Контакты</a></li>
+          </ul>
+          <a class="btn btn--primary mobile-menu__cta" href="#contacts">Обсудить проект</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero" id="hero">
+        <div class="container hero__grid">
+          <div class="reveal">
+            <p class="eyebrow">⚡ Фронтенд-студия разработки</p>
+            <h1 class="hero__title">
+              Создаем <span class="gradient-text">быстрые и современные</span> веб-интерфейсы
+            </h1>
+            <p class="hero__subtitle">
+              A&amp;O Team — команда фронтенд-разработчиков. Превращаем макеты и идеи в чистый,
+              оптимизированный и адаптивный код.
+            </p>
+            <div class="hero__buttons">
+              <a class="btn btn--primary" href="#services">Услуги</a>
+              <a class="btn btn--ghost" href="#contacts">Связаться</a>
+            </div>
+
+            <dl class="stats">
+              <div class="stats__item">
+                <dd class="stats__value">100%</dd>
+                <dt class="stats__label">адаптивность</dt>
+              </div>
+              <div class="stats__item">
+                <dd class="stats__value">SEO</dd>
+                <dt class="stats__label">Оптимизация</dt>
+              </div>
+              <div class="stats__item">
+                <dd class="stats__value">24ч</dd>
+                <dt class="stats__label">ответ на заявку</dt>
+              </div>
+            </dl>
+          </div>
+
+          <div class="card card--hover window reveal">
+            <div class="window__bar">
+              <span class="dots" aria-hidden="true">
+                <i class="dot dot--red"></i><i class="dot dot--yellow"></i
+                ><i class="dot dot--green"></i>
+              </span>
+              <span class="window__title">ao-team.config.js</span>
+            </div>
+            <pre class="code"><code><span class="tok-com">// A&amp;O Team — принципы разработки</span>
+<span class="tok-kw">export default</span> {
+  <span class="tok-key">team</span>: <span class="tok-str">"A&amp;O Team"</span>,
+  <span class="tok-key">stack</span>: [<span class="tok-str">"React"</span>, <span class="tok-str">"JS"</span>, <span class="tok-str">"HTML/CSS"</span>],
+  <span class="tok-key">responsive</span>: <span class="tok-num">true</span>,
+  <span class="tok-key">lighthouse</span>: <span class="tok-num">98</span>,
+  <span class="tok-key">build</span>: () =&gt; {
+    <span class="tok-kw">return</span> <span class="tok-str">"clean &amp; fast UI"</span>;
+  },
+};</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <header class="section__head reveal">
+            <p class="eyebrow">// О нас</p>
+            <h2 class="section__title">Принципы, на которых мы пишем проекты</h2>
+          </header>
+          <ul class="grid grid--3">
+            <li class="card card--hover card--pad reveal">
+              <span class="icon-badge" aria-hidden="true">{ }</span>
+              <h3 class="card__title">Контроль архитектуры</h3>
+              <p class="card__text">
+                Чистый, читаемый код без мусора и лишних зависимостей. Понятная структура, которую
+                легко поддерживать и развивать.
+              </p>
+            </li>
+            <li class="card card--hover card--pad reveal">
+              <span class="icon-badge" aria-hidden="true">⚡</span>
+              <h3 class="card__title">Оптимизация скорости</h3>
+              <p class="card__text">
+                Высокие показатели Lighthouse: быстрая загрузка, оптимизированные изображения,
+                минимум блокирующих ресурсов.
+              </p>
+            </li>
+            <li class="card card--hover card--pad reveal">
+              <span class="icon-badge" aria-hidden="true">◇</span>
+              <h3 class="card__title">Pixel Perfect &amp; Mobile First</h3>
+              <p class="card__text">
+                Идеальное соответствие макету и плавная адаптивность от 320px до 1920px+ на любых
+                устройствах.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+<section class="section" id="portfolio">
+  <div class="container container--portfolio">
+    <header class="section__head reveal">
+      <p class="eyebrow">// Портфолио</p>
+      <h2 class="section__title">Наши работы</h2>
+      <p class="section__text">
+        Примеры интерфейсов и решений, которые мы разрабатываем. Оцените скорость работы, структуру и визуальный стиль на реальных прототипах.
+      </p>
+    </header>
+
+    <div class="portfolio__slider" id="portfolioSlider">
+      <ul class="portfolio__list" id="portfolioTrack">
+        
+        <li class="portfolio__item">
+          <a class="portfolio__link" href="https://reign-pc-redesign-by-ao-team.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img class="portfolio__image" src="/src/portfolio1.webp" alt="Project 1 Screenshot" loading="lazy" />
+            <div class="portfolio__info">
+              <h3 class="portfolio__card-title">ReignPC</h3>
+              <p class="portfolio__card-text">Полноценные прямые онлайн-продажи готовых ПК, кастомных систем и комплектующих.</p>
+              <span class="portfolio__tag">Интернет-магазин / E-commerce с конфигуратором ПК.</span>
+            </div>
+          </a>
+        </li>
+        <li class="portfolio__item">
+          <a class="portfolio__link" href="https://itline-redesign-by-ao-team.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img class="portfolio__image" src="/src/portfolio2.webp" alt="Project 2 Screenshot" loading="lazy" />
+            <div class="portfolio__info">
+              <h3 class="portfolio__card-title">ITLine</h3>
+              <p class="portfolio__card-text">Лидогенерация для локального магазина/мастерской, быстрый прогрев клиента через готовые сборки и индивидуальный расчет.</p>
+              <span class="portfolio__tag">Промо-лендинг / Витрина кастомной сборки ПК и техники.</span>
+            </div>
+          </a>
+        </li>
+        <li class="portfolio__item">
+          <a class="portfolio__link" href="https://qaragat-redesign-by-ao-team.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img class="portfolio__image" src="/src/portfolio3.webp" alt="Project 3 Screenshot" loading="lazy" />
+            <div class="portfolio__info">
+              <h3 class="portfolio__card-title">QaragatHotel</h3>
+              <p class="portfolio__card-text">Имиджевая презентация гостиницы, демонстрация номеров, залов и инфраструктуры с прямой конверсией в бронь номеров или аренду помещений.</p>
+              <span class="portfolio__tag">Многостраничный сайт отеля / HoReCa</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="portfolio__item portfolio__item--clone">
+          <a class="portfolio__link" href="https://reign-pc-redesign-by-ao-team.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img class="portfolio__image" src="/src/portfolio1.webp" alt="Project 1 Screenshot" loading="lazy" />
+            <div class="portfolio__info">
+              <h3 class="portfolio__card-title">ReignPC</h3>
+              <p class="portfolio__card-text">Полноценные прямые онлайн-продажи готовых ПК, кастомных систем и комплектующих.</p>
+              <span class="portfolio__tag">Интернет-магазин / E-commerce с конфигуратором ПК.</span>
+            </div>
+          </a>
+        </li>
+        <li class="portfolio__item portfolio__item--clone">
+          <a class="portfolio__link" href="https://itline-redesign-by-ao-team.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img class="portfolio__image" src="/src/portfolio2.webp" alt="Project 2 Screenshot" loading="lazy" />
+            <div class="portfolio__info">
+              <h3 class="portfolio__card-title">ITLine</h3>
+              <p class="portfolio__card-text">Лидогенерация для локального магазина/мастерской, быстрый прогрев клиента через готовые сборки и индивидуальный расчет.</p>
+              <span class="portfolio__tag">Промо-лендинг / Витрина кастомной сборки ПК и техники.</span>
+            </div>
+          </a>
+        </li>
+        <li class="portfolio__item portfolio__item--clone">
+          <a class="portfolio__link" href="https://qaragat-redesign-by-ao-team.vercel.app/" target="_app/" target="_blank" rel="noopener noreferrer">
+            <img class="portfolio__image" src="/src/portfolio3.webp" alt="Project 3 Screenshot" loading="lazy" />
+            <div class="portfolio__info">
+              <h3 class="portfolio__card-title">QaragatHotel</h3>
+              <p class="portfolio__card-text">Имиджевая презентация гостиницы, демонстрация номеров, залов и инфраструктуры с прямой конверсией в бронь номеров или аренду помещений.</p>
+              <span class="portfolio__tag">Многостраничный сайт отеля / HoReCa</span>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">// Услуги</p>
+            <h2 class="section__title">Что мы делаем</h2>
+            <p class="section__text">
+              От одностраничных лендингов до сложных многостраничных структур и доработки готовых сайтов.
+            </p>
+          </header>
+          <ul class="grid grid--3" id="services-list"></ul>
+        </div>
+      </section>
+      
+      <section class="section" id="process">
+        <div class="container">
+          <header class="section__head reveal">
+            <p class="eyebrow">// Процесс</p>
+            <h2 class="section__title">Как мы организуем работу над проектом</h2>
+            <p class="section__text">
+              Прозрачный и понятный процесс от первых задач до передачи готового сайта.
+            </p>
+          </header>
+
+          <ol class="process__list">
+            <li class="card card--hover card--pad process__item reveal">
+              <span class="process__step">Шаг 01</span>
+              <h3 class="card__title">Консультация</h3>
+              <p class="card__text">Обсуждаем задачи проекта, анализируем нишу и фиксируем требования.</p>
+            </li>
+            <li class="card card--hover card--pad process__item reveal">
+              <span class="process__step">Шаг 02</span>
+              <h3 class="card__title">Бесплатное DEMO</h3>
+              <p class="card__text">Разрабатываем и демонстрируем первый экран вашего будущего сайта без предоплаты.</p>
+            </li>
+            <li class="card card--hover card--pad process__item reveal">
+              <span class="process__step">Шаг 03</span>
+              <h3 class="card__title">Согласование</h3>
+              <p class="card__text">Оцениваем DEMO-версию, утверждаем стиль, сроки и финальную стоимость.</p>
+            </li>
+            <li class="card card--hover card--pad process__item reveal">
+              <span class="process__step">Шаг 04</span>
+              <h3 class="card__title">Предоплата</h3>
+              <p class="card__text">После вашего одобрения концепта заключаем договор и вносится 30% предоплаты.</p>
+            </li>
+            <li class="card card--hover card--pad process__item reveal">
+              <span class="process__step">Шаг 05</span>
+              <h3 class="card__title">Полная разработка</h3>
+              <p class="card__text">Верстаем все страницы, настраиваем адаптивность и демонстрируем готовый проект.</p>
+            </li>
+            <li class="card card--hover card--pad process__item reveal">
+              <span class="process__step">Шаг 06</span>
+              <h3 class="card__title">Передача исходников</h3>
+              <p class="card__text">После финального расчета передаем полный архив проекта, подключаем домен и выводим сайт на хостинг.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      
+      <section class="section" id="contacts">
+        <div class="container contacts">
+          <div class="reveal">
+            <p class="eyebrow">// Контакты</p>
+            <h2 class="section__title">Расскажите о проекте</h2>
+            <p class="section__text">
+              Опишите задачу — вернёмся с оценкой сроков и стоимости в течение 24 часов.
+            </p>
+            <ul class="contacts__list">
+              <li>
+                <a
+                  class="card card--hover contacts__item"
+                  href="https://wa.me/772142012"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="contacts__label">WhatsApp</span>
+                  <span class="contacts__value">Ando.team</span>
+                </a>
+              </li>
+              <li>
+                <a class="card card--hover contacts__item" href="mailto:aandoteam2026@gmail.com">
+                  <span class="contacts__label">Email</span>
+                  <span class="contacts__value">aandoteam2026@gmail.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+  <form class="card form reveal" id="contact-form" novalidate>
+  
+  <div class="form__field">
+    <label class="form__label" for="name">Имя</label>
+    <input class="input" id="name" name="name" required placeholder="Как к вам обращаться" />
+  </div>
+
+  <div class="form__field">
+    <label class="form__label" for="whatsapp">WhatsApp (Обязательно)</label>
+    <input
+      class="input"
+      id="whatsapp"
+      name="whatsapp"
+      type="tel"
+      required
+      placeholder="+996 555 123 456"
+      pattern="^\+996[0-9]{9}$"
+    />
+  </div>
+
+  <div class="form__field">
+    <label class="form__label" for="email">Email (Необязательно)</label>
+    <input
+      class="input"
+      id="email"
+      name="email"
+      type="email"
+      placeholder="mail@example.com"
+    />
+  </div>
+    
+      <div class="form__field">
+  <label class="form__label">Что вас интересует?</label>
+  <ul class="form__services-grid" id="form-services-list"></ul>
+</div>
+
+            <div class="form__field">
+              <label class="form__label" for="message">Описание проекта</label>
+              <textarea
+                class="input"
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Тип сайта, задачи, сроки, есть ли макет..."
+              ></textarea>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit">Отправить заявку</button>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+          </div>
+        </section>
+      </main> 
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="logo logo--sm" data-text="AO.Team">A&O.Team</span>
+        <p class="footer__copy">© 2026 AO Team. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+    <script src="./service.js" defer></script>
+  </body>
+</html>   
